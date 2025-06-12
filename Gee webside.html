@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        *{
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+       
+        
+        .navbar{
+            background: rgb(241, 234, 236);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            box-shadow: 4 8px 15px rgb(66, 228, 217);
+           
+            
+            
+        }
+        .navdiv{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 5px 10px 12px rgb(11, 194, 194);
+        }
+        .logo a{
+            font-size: 25px;
+          font-weight: 600;
+        color:rgb(226, 29, 29);
+
+        }
+       li a:hover{
+        color:rgb(222, 238, 238);
+        background: rgb(85, 136, 85);
+        border-radius: 10px;
+        
+       }
+        li{
+            text-decoration: none;
+            list-style: none;
+            display: inline-block;
+        }
+        li a{
+            color: rgb(241, 21, 21);
+            font-size: 18px;
+            font-weight: bold;
+            margin-right:100px;
+            
+        }
+       
+        .card-container{
+         display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap:200px;
+            margin-top: 100px;
+        }
+        .card{
+            width:200px;
+            height:300px;
+            border-radius: 50px;
+            
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        .box1:hover{
+            transform: translatex(-20px);
+        }
+        .box2:hover{
+            transform: translatex(-20px);
+        }
+        .box3:hover{
+            transform: translatex(-20px);
+        }
+        .box4:hover{
+            transform: translatex(-20px);
+        }
+        .box5:hover{
+            transform: translatex(-20px);
+        }
+        .box6:hover{
+            transform: translatex(-20px);
+        }
+        .card img{
+            width:100%;
+            height:70%;
+            object-fit: cover;
+           
+        }
+        .card-content{
+          padding:10px;
+        }
+        .card-content h1{
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .box1{
+            background: rgb(116, 228, 153);
+            border-radius: 50px;
+            box-shadow: 4px 8px 11px rgb(224, 96, 118);
+           
+            
+        }
+        .box2{
+            background: rgb(167, 150, 196);
+            border-radius: 50px;
+            box-shadow: 4px 8px 11px rgb(96, 224, 102);
+
+        }
+        .box3{
+            background:rgb(212, 54, 120) ;
+            border-radius: 50px;
+            box-shadow: 4px 8px 11px rgb(51, 248, 189);
+
+        }
+        .box4{
+            background:rgb(212, 163, 57);
+            border-radius: 50px;
+            box-shadow: 4px 8px 11px rgb(226, 28, 61);
+
+        }
+    .box5{
+        background: rgb(85, 73, 136);
+            box-shadow: 4px 8px 11px rgb(170, 136, 22);
+            border-radius:50px;
+    }
+        .box6{
+            background:rgb(199, 130, 199);
+            border-radius: 50px;
+            box-shadow: 4px 8px 11px rgb(240, 2, 2);
+
+        }
+    
+  
+
+
+       .card-container1{
+         display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap:200px;
+            margin-top: 100px;
+            row-gap: 100px;
+        
+           
+        }
+        .card1{
+            width:250px;
+            height:300px;
+            column-gap:2rem;
+            box-shadow: 4px 8px 11px rgb(0, 183, 255);
+            background-color: rgb(236, 245, 247);
+         
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        .card h1{
+            text-align: center;
+            color:rgb(187, 255, 0);
+        }
+        .card1:hover{
+            transform: translateY(-20px);
+        }
+        .card1 img{
+            width:100%;
+            height:70%;
+            object-fit: cover;
+        }
+        .card1-content{
+          padding:10px;
+        }
+        .card-content1 h1{
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .tamil{
+            text-align: center;
+            color:orangered;
+        }
+   .selvi{
+    text-align: center;
+    color:orangered;
+   }
+   .card1 h1{
+    text-align: center;
+    font-size: 20px;
+
+   }
+    
+
+   .btn{
+    padding:16 19px;
+    
+    color:var(--bg-color);
+   font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+     margin:30px;
+    width: 100px;
+     margin-top:auto;
+    text-align: center;
+    align-items: center;
+    
+}
+ .btn .bx{
+    padding:2px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-radius:50%;
+    font-size: 10px;
+    margin:auto;
+    align-items: center;
+ }
+ .btn:hover{
+    background: rgb(185, 109, 106);
+    transition: 0.2s ease;
+    border-radius: 10px;
+ }
+
+.card-container1 .card1 .bxs-heart{
+  
+   text-align: center;
+    color: rgb(255, 17, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
+}
+
+
+.card-container1 .discount{
+    color:rgb(212, 62, 87);
+    font-size: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.footer{
+         display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap:200px;
+            margin-top: 100px;
+            row-gap: 100px;
+            background: white;
+        
+           
+        }
+        .footer img{
+            height: 100px;
+            width:100px;
+        }
+        .footer-box{
+            width:250px;
+            height:300px;
+            column-gap:2rem;
+            box-shadow: 4px 8px 11px #ff9100;
+            background-color: rgb(222, 236, 238);
+         font-size: 10px;
+            overflow: hidden;
+            transition: 0.5s;
+         
+        }
+.footer-box:hover{
+    transform: translateY(-20px);
+}
+.muthu h1{
+    text-align: center;
+    color: #ff9100;
+    margin-top: 50px;
+
+}
+.footer-box h1{
+    text-align: center;
+    color: green;
+}
+.footer-box h4{
+    text-align: center;
+    color:orange;
+    font-size: 16px;
+}
+.footer-box h2{
+    text-align: center;
+    color:rgb(228, 105, 23);
+}
+.footer-box h5{
+    text-align: center;
+    color:rgb(25, 94, 30);
+    font-size: 10px;
+}
+       </style>
+      </head>
+     <body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="">GEE SHOP</a></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#women">WomenBlog</a></li>
+                <li><a href="#men">MENBLOG</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+       
+  
+    <div class="container11" id="home">
+        <img src="images/ggg.avif" height="700" width="1330px" margin-top="100px"></div>
+
+
+
+
+
+   
+    </div>
+
+     <!--men-->
+               <div class="tamil">
+               <h1>WOMEN BLOG</h1></div>
+               <div class="card-container " id="women" >
+                  <div class="box1">
+                  <div class="card">
+            <img src="images/dress1.jpg">
+            <div class="card-content">
+                <h1>RS.1200</h1>
+                <a href="#" class="btn">Shop now<i class='bx bx-right-arrow-alt'></i></a> 
+                
+              
+            </div>
+        </div>
+    </div>
+
+     <div class="box2">
+        <div class="card">
+            <img src="images/dress2.jpg">
+            <div class="card-content">
+                <h1>Rs.1500</h1>
+                <a href="#" class="btn">Shop now<i class='bx bx-right-arrow-alt'></i></a> 
+
+               
+            </div>
+        </div>
+     
+    </div>
+     <div class="box3">        <div class="card">
+            <img src="images/dress3.jpg">
+            <div class="card-content">
+                <h1>RS.1800</h1>
+                <a href="#" class="btn">Shop now<i class='bx bx-right-arrow-alt'></i></a> 
+
+                
+            </div>
+        </div>
+    </div>
+
+  <div class="box4">
+        <div class="card">
+            <img src="images/dress4.jpg">
+            <div class="card-content">
+                <h1>RS.2000</h1>
+                <a href="#" class="btn">Shop now<i class='bx bx-right-arrow-alt'></i></a> 
+
+                
+              
+            </div>
+        </div>
+    </div>
+   <div class="box5">
+        <div class="card">
+            <img src="images/dress5.jpg">
+            <div class="card-content">
+                <h1>RS.2500</h1>
+                <a href="#" class="btn">Shop now<i class='bx bx-right-arrow-alt'></i></a> 
+
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="box6">
+        <div class="card">
+            <img src="images/dress1.jpg">
+            <div class="card-content">
+                <h1>Rs.3000></h1>
+                <a href="#" class="btn">Shop now<i class='bx bx-right-arrow-alt'></i></a> 
+
+            
+               
+            </div>
+        </div>
+        </div></div>
+    
+ 
+           
+     
+
+<!--men-->
+
+<div class="selvi"><h1>MEN BLOG</h1></div>
+
+     <div class="card-container1 " id="men" >
+        
+        
+        <div class="card1">
+            <img src="images/men1.jpg">
+                <div class="card1-content">
+                <h1>RS.1500</h1>
+                
+
+            <i class='bx bxs-heart' ></i> 
+           <span class="discount">25%</span>
+                
+                </div>
+        </div>
+        
+
+
+        
+            <div class="card1">
+                <img src="images/men2.jpg">
+                <div class="card1-content">
+                    <h1>RS .1000</h1>
+                    
+                    <i class='bx bxs-heart' ></i> 
+                    <span class="discount">25%</span>
+                    
+                
+            </div></div>
+
+            
+         
+                   
+           
+        
+        
+                <div class="card1">
+                    <img src="images/men3.jpg">
+                    <div class="card1-content">
+                        <h1>Rs.600</h1>
+                       
+                        <i class='bx bxs-heart' ></i> 
+                        <span class="discount">25%</span>
+                        
+                </div></div>
+
+
+              
+                    <div class="card1">
+                        <img src="images/men4.jpg">
+                        <div class="card1-content">
+                            <h1>Rs.800</h1>
+                            
+                            <i class='bx bxs-heart' ></i> 
+                            <span class="discount">25%</span>
+                            
+                       
+                       
+                    </div></div>
+
+                        <div class="card1">
+                            <img src="images/men5.jpg">
+                            <div class="card1-content">
+                                <h1>Rs.1500</h1>
+                                
+                                <i class='bx bxs-heart' ></i> 
+                                <span class="discount">25%</span>
+                                
+                                
+                           
+                        </div></div>
+    
+
+                    
+                        <div class="card1">
+                            <img src="images/men6.jpg">
+                            <div class="card1-content">
+                                <h1>RS.2000</h1>
+                                
+                                <i class='bx bxs-heart' ></i> 
+                                <span class="discount">25%</span>
+                                
+                                
+                        
+                        </div>
+                    </div>
+    </div>
+   
+  <div class="muthu">
+    <h1>CONTACT</h1>
+  </div>
+  <div class="footer" id="contact">
+        
+<div class="footer-box">
+    <img src="images/dress5.jpg">
+    <h1>Women Special Category</h1>
+    <h2>50% Discount</h2>
+    <h4>Kovilpatti ,old bus stand opposite</h4>
+    <h5>723467365</h5>
+   
+ 
+
+</div>
+<div class="footer-box">
+    <img src="images/men5.jpg">
+    <h1>MEN Special Category</h1>
+    <h2>25% Discount</h2>
+    <h4>Rajapalayam ,old bus stand opposite</h4>
+    <h5>9556748705</h5>
+    
+
+
+ 
+
+</div>
+
+
+</div>
+
+</body>
+</html>
